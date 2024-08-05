@@ -70,6 +70,39 @@ import mole from "./mole.png";
           </ol>
         </td>
       </tr>
+      <tr>
+        <td
+          ><h1>Become a member</h1>
+          <button
+            style="text-align:center; color:red; background-color: blue; padding: 20px;"
+            >Click here to join and become a member</button
+          >
+        </td>
+        <td
+          ><h1>Fundraising event</h1>
+
+          <p>
+            The fundraising event will be held at <kdb
+              >100 Legends Way, Boston, MA 02114</kdb
+            > at <span id="time">nov 20 2024 from 9pm to 12am</span><script>
+              const time = document.querySelector("time");
+              const d = new Date();
+              time.innerText = time?.innerText.replace(
+                "2024",
+                (d.getFullYear() + 1).toString()
+              );
+            </script>
+            <bold>Attendees</bold>
+            <ul>
+              <li>Stoic Stick</li>
+              <li>Jensen Huang</li>
+              <li>Pony Ma</li>
+              <li>Rajesh Gopinathan</li>
+            </ul>
+          </p>
+        </td>
+      </tr>
     </table>
+    <p>© Copyright R.I.S.C non profit</p>
   </body>
 </html>
